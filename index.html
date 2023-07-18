@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Свинья</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Игрок 1</h2>
+        <p class="score" id="score--0">47</p>
+        <div class="current">
+          <p class="current-label">Текущие очки</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Игрок 2</h2>
+        <p class="score" id="score--1">31</p>
+        <div class="current">
+          <p class="current-label">Текущие очки</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <div class="modal-window hidden">
+        <button class="close-modal-window">&times;</button>
+        <h1>Правила</h1>
+        <br>
+        <p>
+          - Смысл игры первым набрать 100 итоговых очков.<br>
+          <br>
+          - Если вам выпадает число 1, ваши временные очки сбрасываются, чтобы этого избежать, не забывайте перебрасывать очки из временных в постоянные.
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+
+      <img src="dice1.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🐷 Новая игра</button>
+      <button class="btn btn--roll">🎲 Бросить кубик</button>
+      <button class="btn btn--hold">👌 Оставить</button>
+      <button class="btn btn--rules">📄 Правила</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
